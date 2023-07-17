@@ -12,7 +12,7 @@ import boto3
 args = getResolvedOptions(sys.argv,['bucket','file'])
 bucket = args['bucket']
 obj = args['file']
-
+print("yash")
 
 data = "s3a://{}/{}".format(bucket,obj)
 sc = SparkContext()
